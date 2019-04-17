@@ -53,8 +53,6 @@ func main() {
 		file = flag.String("file", "", "filePath")
 	)
 	flag.Parse()
-	exe, _ := os.Executable()
-	fmt.Println(exe)
 	// read args
 	lineVal := *line
 	textVal := *text
@@ -81,6 +79,4 @@ func main() {
 			os.Exit(1)
 		}
 	}
-	fmt.Println(lineVal)
-	fmt.Println(textVal)
 }
