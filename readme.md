@@ -21,3 +21,8 @@ hoge.txt
 aaa
 text
 ````
+
+# example 2
+````
+find . -iname *.hoge | xargs goinsert -text=aaa
+````
