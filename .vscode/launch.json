@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug",
+            "type": "go",
+            "request": "launch",
+            "mode": "debug",
+            "remotePath": "",
+            "port": 2345,
+            "host": "127.0.0.1",
+            "program": "${workspaceFolder}/cmd/goinsert",
+            "env": {},
+            "args": [
+                "-text=aaa",
+                "/Users/koya/Work/a.txt"
+            ],
+            "showLog": true,
+        },
+        {
+            "name": "Test",
+            "type": "go",
+            "request": "launch",
+            "mode": "test",
+            "program": "${workspaceRoot}/cmd/goinsert",
+            "env": {},
+            "args": [
+                "-test.v"
+            ],
+            "showLog": true
+        }
+    ]
+}
