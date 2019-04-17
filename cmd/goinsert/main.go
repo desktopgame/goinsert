@@ -24,10 +24,11 @@ func proc(file string, lineno int, text string) error {
 	r := bufio.NewReader(fp)
 	var buf bytes.Buffer
 	for {
-		line, err := r.ReadString('\n')
+		by, _, err := r.ReadLine()
 		if err != nil {
 			break
 		}
+		line := string(by)
 		line = strings.TrimRight(line, "\n")
 		if c == lineno {
 			buf.WriteString(text)
