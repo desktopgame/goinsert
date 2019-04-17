@@ -1,9 +1,9 @@
 # goinsert
-goinsert is tool for insert text to file
-known another solution as used `sed` command, but
-can't get i expected result in mac
-
-you can use to `echo` command if you want insert  to last line
+goinsert is tool for insert text to file  
+known another solution as used `sed` command, but  
+can't get i expected result in mac  
+  
+you can use to `echo` command if you want insert  to last line  
 
 # example
 hoge.txt
